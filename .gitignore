@@ -1,15 +1,24 @@
-# Python cache and compiled files
+# Python backend for club management
 __pycache__/
-*.pyc
-
-# Virtual environment folders
+*.py[cod]      # Python compiled files
+*$py.class
+*.so
+.Python
 env/
-venv/
-.venv/
+.env           # Where database passwords are stored
+venv/          # Virtual environment for testing
+.venv
 
-# IDE/editor settings
-.vscode/
-.idea/
+# Teacher IDE settings
+.vscode/       # Ms. Rodriguez uses VS Code
+.idea/         # Mr. Chen uses PyCharm
 
-# Environment variables and secrets
-.env
+# Local development & testing
+instance/
+.pytest_cache/
+.coverage      # Test coverage reports
+htmlcov/
+
+# Staff computer files
+.DS_Store      # For teachers with Macs
+Thumbs.db      # For teachers with Windows
